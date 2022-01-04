@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR | Rajat Kumar Prajapati</title>
+    <!-- cloudflayer css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- font awesome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="..css/icons.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+        <button id="Toggle-btn" class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburgar"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../skills.html" class="nav__link">My Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/index.html#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../index.html#work" class="nav__link">My Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../achivements.html" class="nav__link">My Achivements</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro ">
+        <h1 class="section__title section__title--intro">
+            Artificial Intelligence Based <strong>ANPR</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            Automatic License Plate Recognition for Indian Vehicles
+        </p>
+        <img src="../img/ANPR-index.png" alt="" class="intro__img">
+    </section>
+    <div class="portfolio-item-individual portfolio-item-individual-box">
+        <p style="font-size: var(--fs-h2);">Automatic number-plate recognition is a technology that uses optical character recognition on images to read
+            vehicle License plates.</p>
+        <img src="../img/anpr.png" alt="">
+        <p>For this we used YOLOv3 (You Only Look Onces) algorithm that can detect multiple objects in single run. this algorithm is very fast and accurate to detect objects in Video or Images.</p>
+        <p>The model is trained to detect number plates.
+
+            The model is built taking into consideration the highest accuracy achievable. It has been trained on more
+            than 2000 images.</p>
+
+        <p>
+            Load Colab Notebooks <code>git clone 'https://github.com/itsRajatkumar/ANPR_MANTHAN_ERROR404.git'</code>
+        </p>
+        <p>
+            Load darknet Library <code>git clone 'https://github.com/itsRajatkumar/darknet.git'</code>
+        </p>
+        <p>
+            For pretrained model you can download form G-Drive <code>G-Drive Link</code> And put this model to correct path.
+        </p>
+        <hr>
+        <h1 style="font-size: var(--fs-h2);">Detection-</h1>
+        <p>Training <code>ANPR_Train.ipynb</code> is the Jupyter notebook which contains the code used to train the
+            model. It can be run on Google Colab or locally using Anaconda. (When running using Anaconda make sure you
+            have the MANTHAN_ANPR folder placed correctly in the path.)
+
+            If you don't want to train the model from the beginning a pretrained model
+            <code>yolo-obj_best.weights</code> (Stored in Google Drive
+            <code>/ANPR_MANTHAN/darknet/build/darknet/x64/backup</code> ) contains pretrained weights to initialize the
+            model and test directly.
+        </p>
+        <hr>
+        <h1 style="font-size: var(--fs-h2);">Testing-</h1>
+        <p>
+            The <code>yolo-obj_best.weights</code> is the weights file which <code>ANPR_TEST.ipynb</code> uses to test
+            our model against images and videos. The following parts show how to test on images and videos.
+        </p>
+        <ul>
+
+
+            <li>
+                <h1 style="font-size: var(--fs-h3); text-decoration: underline;">Testing on Images-</h1>
+                <p>
+                    Upload your image to <code>ANPR_MANTHAN/darknet/test_videos_images</code>. Change
+                    <code>image3.jpg</code> to
+                    the name of your image file in the in the following section in the "Test on Image" section.
+                    <br>
+                    <code>!./darknet detector test /myDrive/build/darknet/x64/data/obj.data /myDrive/build/darknet/x64/cfg/yolo-obj.cfg /myDrive/build/darknet/x64/backup/yolo-obj_best.weights /myDrive/test_videos_images/image3.jpg</code>
+                    <br>
+                    The resulting image with the bounding box is stored as predictions.jpg in
+                    <code>ANPR_MANTHAN/darknet</code>
+                </p>
+
+            </li>
+            <li>
+                <h1 style="font-size: var(--fs-h3); text-decoration: underline;">Testing on Videos-</h1>
+                <p>
+                    Upload your test video to <code>ANPR_MANTHAN/darknet/test_videos_images</code>. Rename your video to
+                    "video.mp4" before running the block with the following code: <br>
+                    <code>!./darknet detector demo /myDrive/build/darknet/x64/data/obj.data /myDrive/build/darknet/x64/cfg/yolo-obj.cfg /myDrive/build/darknet/x64/backup/yolo-obj_best.weights -dont_show /myDrive/test_videos_images/video.mp4 -i 0 -out_filename res.avi</code>
+                </p>
+
+            </li>
+        </ul>
+        <hr>
+        <h1 style="font-size: var(--fs-h2);">Optical Character Recognition</h1>
+        <p>
+            Once the number plates have been successfully detected, they are cropped from the image using their bounding box coordinates and saved. <br>
+            OCR model is also built taking into consideration the highest accuracy achievable. It has been trained on more
+            than 1100 images of characters.
+        </p>
+        <p>OCR <code>OCR_Test.ipynb</code> is the Jupyter notebook which contains the code used to test the
+            model. It can be run on Google Colab or locally using Anaconda.</p>
+        <p>
+            run <code>OCR_Test.ipynb</code> file
+        </p>
+        <p>Provide Image Path And Run All Cells In Order AndIn the last you will get the output in a string formet. and finally we get our number-plate in string formet</p>
+    </div>
+    <div class="work__links">
+        <a href="https://github.com/itsRajatkumar/ANPR_MANTHAN_ERROR404/" class="btn work__links--source"
+            target="_blank">View
+            Source-Code</a>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:rajat.kumar2771@gmail.com" class="footer__link">Rajat.kumar2771@gmail.com</a>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.github.com/itsrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.twitter.com/iam_RKPrajapati" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.hackerrank.com/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-hackerrank"></i>
+                    <span>HackerRank</span>
+                </a>
+            </li>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.codechef.com/users/rajat_kp" class="social-list__link" target="_blank">
+                    <i class="fas fa-2x fa-closed-captioning"></i>
+                    <span>CodeChef</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

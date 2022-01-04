@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat's Portfolio Website</title>
+    <!-- cloudflayer css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- font awesome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <header>
+        <div class="logo">
+            <a href="index.html#home">
+
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <button id="Toggle-btn" class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburgar"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="skills.html" class="nav__link">My Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#about" class="nav__link">About me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="index.html#work" class="nav__link">My Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="achivements.html" class="nav__link">My Achivements</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            My <strong>Skills</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            Here is My Skills
+        </p>
+        <img src="img/skills.jpg" alt="" class="intro__img">
+    </section>
+
+
+    <div class="skills skills-lang">
+        <h2>Programming <span>Languages</span></h2>
+        <ul class="skills__icons">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="70px" height="70px">
+                    <path fill="#283593" fill-rule="evenodd"
+                        d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
+                        clip-rule="evenodd" />
+                    <path fill="#5c6bc0" fill-rule="evenodd"
+                        d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
+                        clip-rule="evenodd" />
+                    <path fill="#fff" fill-rule="evenodd"
+                        d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
+                        clip-rule="evenodd" />
+                    <path fill="#3949ab" fill-rule="evenodd"
+                        d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
+                        clip-rule="evenodd" />
+                </svg>
+                <Span>C</Span>
+            </li>
+            <li>
+
+                <svg width="70px" height="70px" viewBox="0 0 256 288" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMinYMin meet">
+                    <path
+                        d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.101-27.163.269C100.395 12.39 32.59 51.237 12.385 62.94 4.064 67.757.015 75.129.013 84.711 0 124.166.013 163.62 0 203.076c.002 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"
+                        fill="#5C8DBC" />
+                    <path
+                        d="M128.182 143.509L2.988 215.593c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252l-124.413-72.074"
+                        fill="#1A4674" />
+                    <path
+                        d="M91.101 164.861c7.285 12.718 20.98 21.296 36.69 21.296 15.807 0 29.58-8.687 36.828-21.541l-36.437-21.107-37.081 21.352"
+                        fill="#1A4674" />
+                    <path
+                        d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761l-124.263 71.55 124.413 72.074c1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"
+                        fill="#1B598E" />
+                    <path
+                        d="M248.728 148.661h-9.722v9.724h-9.724v-9.724h-9.721v-9.721h9.721v-9.722h9.724v9.722h9.722v9.721M213.253 148.661h-9.721v9.724h-9.722v-9.724h-9.722v-9.721h9.722v-9.722h9.722v9.722h9.721v9.721"
+                        fill="#FFF" />
+                    <path
+                        d="M164.619 164.616c-7.248 12.854-21.021 21.541-36.828 21.541-15.71 0-29.405-8.578-36.69-21.296a42.062 42.062 0 0 1-5.574-20.968c0-23.341 18.923-42.263 42.264-42.263 15.609 0 29.232 8.471 36.553 21.059l36.941-21.272c-14.683-25.346-42.096-42.398-73.494-42.398-46.876 0-84.875 38-84.875 84.874 0 15.378 4.091 29.799 11.241 42.238 14.646 25.48 42.137 42.637 73.634 42.637 31.555 0 59.089-17.226 73.714-42.781l-36.886-21.371"
+                        fill="#FFF" />
+                </svg>
+                <span>C++</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 255" class="iconify" data-icon="logos:python" data-inline="false" data-width="70px"
+                    data-height="70px" style="transform: rotate(360deg);">
+                    <defs>
+                        <linearGradient x1="12.959%" y1="12.039%" x2="79.639%" y2="78.201%"
+                            id="IconifyId-17e19091f99-5f0f31-26">
+                            <stop stop-color="#387EB8" offset="0%"></stop>
+                            <stop stop-color="#366994" offset="100%"></stop>
+                        </linearGradient>
+                        <linearGradient x1="19.128%" y1="20.579%" x2="90.742%" y2="88.429%"
+                            id="IconifyId-17e19091f99-5f0f31-27">
+                            <stop stop-color="#FFE052" offset="0%"></stop>
+                            <stop stop-color="#FFC331" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13a11.12 11.12 0 0 1-11.13 11.13a11.12 11.12 0 0 1-11.13-11.13a11.12 11.12 0 0 1 11.13-11.13z"
+                        fill="url(#IconifyId-17e19091f99-5f0f31-26)"></path>
+                    <path
+                        d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13a11.12 11.12 0 0 1 11.13-11.131a11.12 11.12 0 0 1 11.13 11.13a11.12 11.12 0 0 1-11.13 11.13z"
+                        fill="url(#IconifyId-17e19091f99-5f0f31-27)"></path>
+                </svg>
+                <span>Python</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"
+                    class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="70px"
+                    data-height="70px" style="transform: rotate(360deg);">
+                    <path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z"></path>
+                    <path fill="#f1662a" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
+                    <path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16v-3.091z">
+                    </path>
+                    <path fill="#ebebeb"
+                        d="M16 21.434l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004v-3.216z">
+                    </path>
+                    <path fill="#fff"
+                        d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83H15.989z">
+                    </path>
+                    <path fill="#fff" d="M15.989 7.151V10.242h7.466l.062-.694l.141-1.567l.074-.83h-7.743z"></path>
+                </svg>
+                <span>HTML</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"
+                    class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="70px"
+                    data-height="70px" style="transform: rotate(360deg);">
+                    <path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z"></path>
+                    <path fill="#33a9dc" d="M16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path>
+                    <path fill="#fff" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z">
+                    </path>
+                    <path fill="#ebebeb"
+                        d="M16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004v-3.216z">
+                    </path>
+                    <path fill="#fff"
+                        d="M19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007h-3.101z"></path>
+                    <path fill="#ebebeb" d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743z"></path>
+                    <path fill="#ebebeb" d="M16 13.191v3.091H12.601l-.062-.695l-.14-1.567l-.074-.829H16z"></path>
+                </svg>
+                <span>CSS</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 256" class="iconify" data-icon="logos:javascript" data-inline="false"
+                    data-width="70px" data-height="70px" style="transform: rotate(360deg);">
+                    <path d="M0 0h256v256H0V0z" fill="#F7DF1E"></path>
+                    <path
+                        d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996"
+                        fill="#000"></path>
+                    <path
+                        d="M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"
+                        fill="#000"></path>
+                </svg>
+                <span>JavaScript</span>
+            </li>
+
+
+        </ul>
+    </div>
+    <div class="skills skills-tools">
+        <h2>Tools & <span>Technologies</span></h2>
+        <ul class="skills__icons">
+            <li>
+                <svg width="70px" height="70px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M70.9119 99.3171C72.4869 99.9307 74.2828 99.8914 75.8725 99.1264L96.4608 89.2197C98.6242 88.1787 100 85.9892 100 83.5872V16.4133C100 14.0113 98.6243 11.8218 96.4609 10.7808L75.8725 0.873756C73.7862 -0.130129 71.3446 0.11576 69.5135 1.44695C69.252 1.63711 69.0028 1.84943 68.769 2.08341L29.3551 38.0415L12.1872 25.0096C10.589 23.7965 8.35363 23.8959 6.86933 25.2461L1.36303 30.2549C-0.452552 31.9064 -0.454633 34.7627 1.35853 36.417L16.2471 50.0001L1.35853 63.5832C-0.454633 65.2374 -0.452552 68.0938 1.36303 69.7453L6.86933 74.7541C8.35363 76.1043 10.589 76.2037 12.1872 74.9905L29.3551 61.9587L68.769 97.9167C69.3925 98.5406 70.1246 99.0104 70.9119 99.3171ZM75.0152 27.2989L45.1091 50.0001L75.0152 72.7012V27.2989Z"
+                            fill="white" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M96.4614 10.7962L75.8569 0.875542C73.4719 -0.272773 70.6217 0.211611 68.75 2.08333L1.29858 63.5832C-0.515693 65.2373 -0.513607 68.0937 1.30308 69.7452L6.81272 74.754C8.29793 76.1042 10.5347 76.2036 12.1338 74.9905L93.3609 13.3699C96.086 11.3026 100 13.2462 100 16.6667V16.4275C100 14.0265 98.6246 11.8378 96.4614 10.7962Z"
+                            fill="#0065A9" />
+                        <g filter="url(#filter0_d)">
+                            <path
+                                d="M96.4614 89.2038L75.8569 99.1245C73.4719 100.273 70.6217 99.7884 68.75 97.9167L1.29858 36.4169C-0.515693 34.7627 -0.513607 31.9063 1.30308 30.2548L6.81272 25.246C8.29793 23.8958 10.5347 23.7964 12.1338 25.0095L93.3609 86.6301C96.086 88.6974 100 86.7538 100 83.3334V83.5726C100 85.9735 98.6246 88.1622 96.4614 89.2038Z"
+                                fill="#007ACC" />
+                        </g>
+                        <g filter="url(#filter1_d)">
+                            <path
+                                d="M75.8578 99.1263C73.4721 100.274 70.6219 99.7885 68.75 97.9166C71.0564 100.223 75 98.5895 75 95.3278V4.67213C75 1.41039 71.0564 -0.223106 68.75 2.08329C70.6219 0.211402 73.4721 -0.273666 75.8578 0.873633L96.4587 10.7807C98.6234 11.8217 100 14.0112 100 16.4132V83.5871C100 85.9891 98.6234 88.1786 96.4586 89.2196L75.8578 99.1263Z"
+                                fill="#1F9CF0" />
+                        </g>
+                        <g style="mix-blend-mode:overlay" opacity="0.25">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M70.8511 99.3171C72.4261 99.9306 74.2221 99.8913 75.8117 99.1264L96.4 89.2197C98.5634 88.1787 99.9392 85.9892 99.9392 83.5871V16.4133C99.9392 14.0112 98.5635 11.8217 96.4001 10.7807L75.8117 0.873695C73.7255 -0.13019 71.2838 0.115699 69.4527 1.44688C69.1912 1.63705 68.942 1.84937 68.7082 2.08335L29.2943 38.0414L12.1264 25.0096C10.5283 23.7964 8.29285 23.8959 6.80855 25.246L1.30225 30.2548C-0.513334 31.9064 -0.515415 34.7627 1.29775 36.4169L16.1863 50L1.29775 63.5832C-0.515415 65.2374 -0.513334 68.0937 1.30225 69.7452L6.80855 74.754C8.29285 76.1042 10.5283 76.2036 12.1264 74.9905L29.2943 61.9586L68.7082 97.9167C69.3317 98.5405 70.0638 99.0104 70.8511 99.3171ZM74.9544 27.2989L45.0483 50L74.9544 72.7012V27.2989Z"
+                                fill="url(#paint0_linear)" />
+                        </g>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d" x="-8.39411" y="15.8291" width="116.727" height="92.2456"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="4.16667" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                        <filter id="filter1_d" x="60.4167" y="-8.07558" width="47.9167" height="116.151"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                            <feOffset />
+                            <feGaussianBlur stdDeviation="4.16667" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear" x1="49.9392" y1="0.257812" x2="49.9392" y2="99.7423"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" />
+                            <stop offset="1" stop-color="white" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>VS Code</span>
+            </li>
+            <li>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
+                    style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: url(#SVGID_1_);
+                        }
+
+                        .st1 {
+                            fill: url(#SVGID_2_);
+                        }
+
+                        .st2 {
+                            fill: url(#SVGID_3_);
+                        }
+
+                        .st3 {
+                            fill: url(#SVGID_4_);
+                        }
+
+                        .st4 {
+                            fill: url(#SVGID_5_);
+                        }
+
+                        .st5 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <g id="XMLID_1_">
+
+                        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-0.1022" y1="-7.717104e-002"
+                            x2="1.3236" y2="-7.717104e-002"
+                            gradientTransform="matrix(152.36 0 0 160.0328 213.4152 220.7171)">
+                            <stop offset="0" style="stop-color:#21D789" />
+                            <stop offset="1" style="stop-color:#07C3F2" />
+                        </linearGradient>
+                        <polygon class="st0" points="323.6,125.1 430.2,213.5 391.4,291.6 327.6,274 271.7,274 	" />
+
+                        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-0.2603" y1="-5.942437e-002"
+                            x2="1.1655" y2="-5.942437e-002"
+                            gradientTransform="matrix(313.7 -231.58 189.0633 384.245 32.3813 338.117)">
+                            <stop offset="0" style="stop-color:#FCF84A" />
+                            <stop offset="1.000000e-002" style="stop-color:#FCF84A" />
+                            <stop offset="0.11" style="stop-color:#A7EB62" />
+                            <stop offset="0.21" style="stop-color:#5FE077" />
+                            <stop offset="0.27" style="stop-color:#32DA84" />
+                            <stop offset="0.31" style="stop-color:#21D789" />
+                            <stop offset="0.58" style="stop-color:#21D789" />
+                            <stop offset="0.6" style="stop-color:#21D789" />
+                            <stop offset="0.69" style="stop-color:#20D68C" />
+                            <stop offset="0.76" style="stop-color:#1ED497" />
+                            <stop offset="0.83" style="stop-color:#19D1A9" />
+                            <stop offset="0.9" style="stop-color:#13CCC2" />
+                            <stop offset="0.97" style="stop-color:#0BC6E1" />
+                            <stop offset="1" style="stop-color:#07C3F2" />
+                        </linearGradient>
+                        <polygon class="st1"
+                            points="215.8,182.7 195.3,291.6 193.5,329.3 141.1,351.5 67.5,359.5 89.7,123.4 223.8,67.5 305.9,121.7 	" />
+
+                        <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-0.4798" y1="-0.1459"
+                            x2="0.946" y2="-0.1459"
+                            gradientTransform="matrix(52.32 -164.18 104.2056 82.4322 156.4744 405.6144)">
+                            <stop offset="0" style="stop-color:#21D789" />
+                            <stop offset="0.16" style="stop-color:#24D788" />
+                            <stop offset="0.3" style="stop-color:#2FD886" />
+                            <stop offset="0.44" style="stop-color:#41DA82" />
+                            <stop offset="0.56" style="stop-color:#5ADC7D" />
+                            <stop offset="0.69" style="stop-color:#7AE077" />
+                            <stop offset="0.81" style="stop-color:#A1E36E" />
+                            <stop offset="0.93" style="stop-color:#CFE865" />
+                            <stop offset="1" style="stop-color:#F1EB5E" />
+                        </linearGradient>
+                        <polygon class="st2" points="215.8,182.7 226,393.1 192.4,432.5 67.5,359.5 170.2,206.1 	" />
+
+                        <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-5.016552e-002"
+                            y1="-2.355318e-002" x2="1.3756" y2="-2.355318e-002"
+                            gradientTransform="matrix(113.86 -153.08 194.1929 89.7545 225.2474 263.2869)">
+                            <stop offset="0" style="stop-color:#21D789" />
+                            <stop offset="6.000000e-002" style="stop-color:#24D788" />
+                            <stop offset="0.11" style="stop-color:#2FD886" />
+                            <stop offset="0.16" style="stop-color:#41DA82" />
+                            <stop offset="0.21" style="stop-color:#5ADD7D" />
+                            <stop offset="0.25" style="stop-color:#79E077" />
+                            <stop offset="0.26" style="stop-color:#7CE076" />
+                            <stop offset="0.5" style="stop-color:#8CE173" />
+                            <stop offset="0.92" style="stop-color:#B2E56B" />
+                            <stop offset="1" style="stop-color:#B2E56B" />
+                        </linearGradient>
+                        <polygon class="st3" points="353.8,167.3 227.2,167.3 339,67.5 	" />
+
+                        <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-0.2773" y1="-5.465724e-002"
+                            x2="1.1485" y2="-5.465724e-002"
+                            gradientTransform="matrix(-229.42 -2.14 2.0328 -241.5213 399.7113 282.8588)">
+                            <stop offset="0" style="stop-color:#FCF84A" />
+                            <stop offset="0.39" style="stop-color:#FCF84A" />
+                            <stop offset="0.54" style="stop-color:#ECF451" />
+                            <stop offset="0.83" style="stop-color:#C2E964" />
+                            <stop offset="0.92" style="stop-color:#B2E56B" />
+                            <stop offset="1" style="stop-color:#B2E56B" />
+                        </linearGradient>
+                        <polygon class="st4"
+                            points="432.5,393.7 321.3,431.9 173,390.3 215.8,182.7 232.9,167.3 323.6,158.8 315,249.4 386.9,221.5 	" />
+                        <rect id="XMLID_2_" x="135.9" y="135.9" width="228.1" height="228.1" />
+                        <path id="XMLID_3_" class="st5" d="M157.6,321.3h85.5v14.3h-85.5V321.3z M157,165.6h38.8c22.8,0,35.9,13.1,35.9,32.5
+		c0,21.7-17.1,33.1-38.2,33.1h-16v28.5H157V165.6z M210.6,199.2c0-9.1-6.3-14.3-17.1-14.3h-16v29.1h16.5
+		C205.3,214.1,210.6,207.2,210.6,199.2z M239.7,213.5c-0.3-13.1,4.8-25.7,14-35c9.3-9.3,21.9-14.3,35-14c17.7,0,28.5,5.7,37.1,14.8
+		l-13.1,15.4c-7.4-6.8-14.8-10.8-24-10.8c-16,0-27.4,13.1-27.4,29.7c0,16,11.4,29.7,27.4,29.7c10.8,0,17.7-4.6,25.1-10.8l13.1,13.1
+		c-9.7,10.3-20.5,17.1-38.8,17.1c-13,0-25.4-5.2-34.5-14.4C244.6,238.9,239.6,226.5,239.7,213.5z" />
+                    </g>
+                </svg>
+                <span>Pycharm</span>
+            </li>
+            <li>
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="70px" height="70px">
+                    <path
+                        d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6 c0,0,1.4,0,2.8,1.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4 c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3 C22,6.1,16.9,1.4,10.9,2.1z" />
+                </svg>
+                <span>GitHub</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 256" class="iconify" data-icon="logos:git-icon" data-inline="false"
+                    data-width="70px" data-height="70px" style="transform: rotate(360deg);">
+                    <path
+                        d="M251.172 116.594L139.4 4.828c-6.433-6.437-16.873-6.437-23.314 0l-23.21 23.21l29.443 29.443c6.842-2.312 14.688-.761 20.142 4.693c5.48 5.489 7.02 13.402 4.652 20.266l28.375 28.376c6.865-2.365 14.786-.835 20.269 4.657c7.663 7.66 7.663 20.075 0 27.74c-7.665 7.666-20.08 7.666-27.749 0c-5.764-5.77-7.188-14.235-4.27-21.336l-26.462-26.462l-.003 69.637a19.82 19.82 0 0 1 5.188 3.71c7.663 7.66 7.663 20.076 0 27.747c-7.665 7.662-20.086 7.662-27.74 0c-7.663-7.671-7.663-20.086 0-27.746a19.654 19.654 0 0 1 6.421-4.281V94.196a19.378 19.378 0 0 1-6.421-4.281c-5.806-5.798-7.202-14.317-4.227-21.446L81.47 39.442l-76.64 76.635c-6.44 6.443-6.44 16.884 0 23.322l111.774 111.768c6.435 6.438 16.873 6.438 23.316 0l111.251-111.249c6.438-6.44 6.438-16.887 0-23.324"
+                        fill="#DE4C36"></path>
+                </svg>
+                <span>Git</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    focusable="false" width="70px" height="70px" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 256" class="iconify" data-icon="logos:bootstrap" data-inline="false"
+                    data-width="70px" data-height="70px" style="transform: rotate(360deg);">
+                    <path
+                        d="M0 222.991C0 241.223 14.779 256 33.009 256H222.99C241.223 256 256 241.221 256 222.991V33.01C256 14.777 241.221 0 222.991 0H33.01C14.777 0 0 14.779 0 33.009V222.99z"
+                        fill="#563D7C"></path>
+                    <path
+                        d="M106.158 113.238V76.985h31.911c3.04 0 5.97.253 8.792.76c2.822.506 5.319 1.41 7.49 2.713c2.17 1.303 3.907 3.112 5.21 5.427c1.302 2.316 1.954 5.283 1.954 8.9c0 6.513-1.954 11.217-5.862 14.111c-3.907 2.895-8.9 4.342-14.979 4.342h-34.516zM72.075 50.5v155h75.112c6.947 0 13.713-.868 20.298-2.605c6.585-1.737 12.446-4.414 17.584-8.032c5.137-3.618 9.226-8.286 12.265-14.002c3.04-5.717 4.559-12.483 4.559-20.298c0-9.697-2.352-17.982-7.055-24.856c-4.704-6.875-11.832-11.687-21.384-14.437c6.947-3.328 12.194-7.598 15.74-12.808c3.545-5.21 5.318-11.722 5.318-19.538c0-7.236-1.194-13.314-3.582-18.235c-2.388-4.92-5.753-8.864-10.095-11.831c-4.341-2.967-9.551-5.102-15.63-6.404c-6.078-1.303-12.808-1.954-20.189-1.954H72.075zm34.083 128.515v-42.549h37.121c7.381 0 13.315 1.7 17.802 5.102c4.486 3.401 6.73 9.081 6.73 17.041c0 4.053-.688 7.381-2.063 9.986c-1.375 2.605-3.22 4.668-5.536 6.187c-2.315 1.52-4.993 2.605-8.032 3.257c-3.04.65-6.223.976-9.552.976h-36.47z"
+                        fill="#FFF"></path>
+                </svg>
+                <span>BootStrap</span>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href="mailto:rajat.kumar2771@gmail.com" class="footer__link">Rajat.kumar2771@gmail.com</a>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.github.com/itsrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.twitter.com/iam_RKPrajapati" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.hackerrank.com/thisisrajatkumar" class="social-list__link" target="_blank">
+                    <i class="fab fa-2x fa-hackerrank"></i>
+                    <span>HackerRank</span>
+                </a>
+            </li>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.codechef.com/users/rajat_kp" class="social-list__link" target="_blank">
+                    <i class="fas fa-2x fa-closed-captioning"></i>
+                    <span>CodeChef</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
