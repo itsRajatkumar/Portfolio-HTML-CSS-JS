@@ -305,7 +305,7 @@ header{
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        width: calc(100% + 6.5em);
     }
 }
 
@@ -540,11 +540,10 @@ header{
 }
 
 .skills-lang {
-    height: 400px;
     background: var(--clr-dark);
 }
 .skills-tools {
-    height: 400px;
+    
     background: var(--clr-light);
 }
   
